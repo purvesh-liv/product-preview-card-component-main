@@ -5,8 +5,9 @@
 body{
     box-sizing: border-box;
     background-color: hsl(30, 38%, 92%);
+    font-family: "Montserrat", sans-serif;
 }
-.mobile-img{
+.product-img{
    width: 100%;
    height: auto;
    border-radius: 5px 5px 0px 0px;
@@ -14,13 +15,15 @@ body{
 .container{
     display: flex;
     justify-content: center;
-    padding: 1rem;
+    padding: 1.5rem;
 
    
 }
 .card{
     max-width: 340px;
     background-color: #fff;
+    padding-bottom: 1rem;
+    border-radius: 0px 0px 5px 5px;
     
 
 }
@@ -30,7 +33,7 @@ body{
     letter-spacing: 0.2rem;
     margin: 0.9rem 1.6rem;
     color: grey;
-    font-size: 14px;
+    font-size: 13px;
 
 }
 .sec-text{
@@ -40,6 +43,8 @@ body{
 }
 .product-name{
    margin:0.5rem 1.3rem ;
+   font-family: "Fraunces";
+   line-height: 1;
 }
 .price-container{
     display: flex;
@@ -47,9 +52,43 @@ body{
 }
 .price{
     color: hsl(158, 36%, 37%);
+    font-family: "Fraunces";
 }
 .old-price{
     text-decoration:line-through;
     margin: 0.5rem 1.2rem;
     color: gray;
+    font-family: "Fraunces";
+    font-size: 14px;
+}
+button{
+   margin: 0.5rem 2rem;
+    width: 80%;
+    padding:0.9rem;
+    border:none;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    border-radius: 7px;
+     font-family: "Montserrat" sans-serif;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap:0.5rem        
+}
+button:hover{
+    background-color:  hsl(158, 42%, 18%);
+}
+
+/* desktop */
+@media (min-width: 768px) {
+    .card{
+        display: flex;
+        
+
+    }
+    .product-img{
+        width: 50%;
+        height: 100%;
+        object-fit: cover;
+    }
 }
